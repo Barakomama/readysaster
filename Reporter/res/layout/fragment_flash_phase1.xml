@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.reporter.FlashPhase1Activity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/textViewDisasterType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="@string/type_of_disaster"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonFire"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textViewDisasterType"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="47dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:onClick="onClick"
+        android:text="@string/fire" />
+
+    <Button
+        android:id="@+id/buttonFlood"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/buttonFire"
+        android:layout_alignBottom="@+id/buttonFire"
+        android:layout_toRightOf="@+id/buttonFire"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:onClick="onClick"
+        android:text="@string/flood" />
+
+    <Button
+        android:id="@+id/buttonEarthquake"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/buttonFlood"
+        android:layout_below="@+id/buttonFlood"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:onClick="onClick"
+        android:text="@string/earthquake" />
+
+    <Button
+        android:id="@+id/buttonTyphoon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/buttonEarthquake"
+        android:layout_alignBottom="@+id/buttonEarthquake"
+        android:layout_alignLeft="@+id/buttonFire"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:onClick="onClick"
+        android:text="@string/typhoon" />
+
+</RelativeLayout>

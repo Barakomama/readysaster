@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eUlat</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_phase3">Phase3Activity</string>
+    <string name="flash_report">Flash Report</string>
+    <string name="initial_report">Initial Report</string>
+    <string name="situation">Situation</string>
+    <string name="type_of_disaster">Type of Disaster</string>
+    <string name="title_activity_flash_phase1">FlashPhase1Activity</string>
+    <string name="fire">Fire</string>
+    <string name="typhoon">Typhoon</string>
+    <string name="earthquake">Earthquake</string>
+    <string name="flood">Flood</string>
+    <string name="title_activity_flash_phase2">FlashPhase2Activity</string>
+    <string name="initial_estimate_of_effects">Initial Estimate of Effects</string>
+    <string name="dead">Dead</string>
+    <string name="injured">Injured</string>
+    <string name="missing">Missing</string>
+    <string name="in_need_of_shelter_clothing">In Need of Shelter and/or Clothing</string>
+    <string name="in_need_of_food">In Need of Food</string>
+    <string name="in_need_of_water">In Need of Water</string>
+    <string name="in_need_of_sanitation">In Need of Sanitation</string>
+    <string name="damage_to_lifelines">Damage to Lifelines</string>
+    <string name="zero">0</string>
+    <string name="title_activity_initial_phase1">InitialPhase1Activity</string>
+    <string name="next">Next</string>
+    <string name="search_rescue">Search and Rescue</string>
+    <string name="evacuation">Evacuation</string>
+    <string name="protection">Protection</string>
+    <string name="medicine_health">Medicine and Health</string>
+    <string name="shelter_clothing">Shelter and Clothing</string>
+    <string name="food">Food</string>
+    <string name="water">Water</string>
+    <string name="sanitation">Sanitation</string>
+    <string name="repair_lifelines">Repair of Lifeline Systems</string>
+    <string name="possible_needs">Possible Needs for External Assistance</string>
+    <string name="submit">Submit</string>
+    <string name="phase1">Phase I</string>
+    <string name="phase2">Phase II </string>
+    <string name="phase3">Phase III</string>
+    <string name="title_activity_submit">SubmitActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="thank_you">Thank you!</string>
+
+</resources>

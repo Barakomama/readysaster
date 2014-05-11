@@ -1,0 +1,315 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.reporter.FlashPhase2Activity$PlaceholderFragment" >
+
+    <ImageButton
+        android:id="@+id/imageButtonLessDead"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/textViewDead"
+        android:layout_toLeftOf="@+id/imageButtonMoreDead"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_rew" />
+
+    <TextView
+        android:id="@+id/editTextDead"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/imageButtonLessDead"
+        android:layout_toLeftOf="@+id/imageButtonLessDead"
+        android:text="@string/zero"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLessInjured"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/editTextInjured"
+        android:layout_toLeftOf="@+id/imageButtonMoreDead"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_rew" />
+
+    <TextView
+        android:id="@+id/editTextInjured"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/textViewInjured"
+        android:layout_toLeftOf="@+id/imageButtonLessInjured"
+        android:text="@string/zero"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMoreDead"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/textViewInjured"
+        android:layout_alignParentRight="true"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMoreInjured"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageButtonMoreDead"
+        android:layout_alignTop="@+id/imageButtonLessInjured"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <TextView
+        android:id="@+id/textViewInjured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewDead"
+        android:layout_below="@+id/editTextDead"
+        android:text="@string/injured"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewMissing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewInjured"
+        android:layout_below="@+id/editTextInjured"
+        android:text="@string/missing"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/editTextMissing"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/editTextInjured"
+        android:layout_alignTop="@+id/textViewMissing"
+        android:text="@string/zero"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLessMissing"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/imageButtonLessInjured"
+        android:layout_toRightOf="@+id/editTextInjured"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_rew" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMoreMissing"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageButtonMoreInjured"
+        android:layout_alignTop="@+id/imageButtonLessMissing"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <TextView
+        android:id="@+id/editText02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewMissing"
+        android:layout_below="@+id/editTextMissing"
+        android:layout_toLeftOf="@+id/editTextMissing"
+        android:text="@string/in_need_of_shelter_clothing"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMoreShelter"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageButtonMoreMissing"
+        android:layout_alignTop="@+id/imageButtonLessShelter"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLessFood"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/editTextFood"
+        android:layout_toLeftOf="@+id/imageButtonMoreShelter"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_rew" />
+
+    <TextView
+        android:id="@+id/editTextFood"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/editText04"
+        android:layout_toLeftOf="@+id/imageButtonLessFood"
+        android:text="@string/zero"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMoreFood"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageButtonMoreShelter"
+        android:layout_alignTop="@+id/imageButtonLessFood"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <TextView
+        android:id="@+id/editTextWater"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/editText03"
+        android:layout_toLeftOf="@+id/imageButtonLessFood"
+        android:text="@string/zero"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/editText03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText04"
+        android:layout_below="@+id/editTextFood"
+        android:text="@string/in_need_of_water"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLessWater"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/editTextWater"
+        android:layout_toLeftOf="@+id/imageButtonMoreFood"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_rew" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMoreWater"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageButtonMoreFood"
+        android:layout_alignTop="@+id/imageButtonLessWater"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <TextView
+        android:id="@+id/editTextSanitation"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editTextWater"
+        android:layout_toLeftOf="@+id/imageButtonLessWater"
+        android:text="@string/zero"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLessSanitation"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/imageButtonLessWater"
+        android:layout_toLeftOf="@+id/imageButtonMoreWater"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_rew" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMoreSanitation"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/imageButtonLessSanitation"
+        android:layout_toRightOf="@+id/imageButtonLessSanitation"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <TextView
+        android:id="@+id/editTextShelter"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/editTextMissing"
+        android:layout_alignTop="@+id/editText02"
+        android:text="@string/zero"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLessShelter"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageButtonLessMissing"
+        android:layout_alignTop="@+id/editTextShelter"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_rew" />
+
+    <TextView
+        android:id="@+id/editTextDamageLifeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText03"
+        android:layout_below="@+id/editTextSanitation"
+        android:text="@string/damage_to_lifelines"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/editTextLifelines"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/editTextDamageLifeline"
+        android:layout_toLeftOf="@+id/imageButtonLessSanitation"
+        android:text="@string/zero"
+        android:textAlignment="center" >
+
+        <requestFocus />
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/imageButtonLessLifelines"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/editTextLifelines"
+        android:layout_toLeftOf="@+id/imageButtonMoreSanitation"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_rew" />
+
+    <TextView
+        android:id="@+id/editText05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextSanitation"
+        android:layout_alignBottom="@+id/editTextSanitation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/editText02"
+        android:text="@string/in_need_of_sanitation"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMoreLifelines"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/imageButtonMoreSanitation"
+        android:layout_alignTop="@+id/imageButtonLessLifelines"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <TextView
+        android:id="@+id/editText04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText02"
+        android:layout_below="@+id/editText02"
+        android:text="@string/in_need_of_food"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/imageButtonMoreLifelines"
+        android:layout_below="@+id/imageButtonLessLifelines"
+        android:onClick="onClick"
+        android:text="@string/next" />
+
+    <TextView
+        android:id="@+id/textViewDead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonNext"
+        android:text="@string/dead"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

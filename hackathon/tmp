@@ -1,0 +1,60 @@
+tmp
+
+curl -u readysaster:readysaster -d data='' http://127.0.0.1:5000/api/photo
+
+curl -i -F filedata=@upload.txt http://localhost:5000/
+
+curl -u username:password "http://example.com/upload.php" -F myfile=@"~/Desktop/image.png"
+
+photo
+which hazard
+how damaged
+what is needed
+
+-> considering these are volunteers!
+-> encourage people to report (not necessarily the one affected)
+
+
+-> when someone reports anything NEAR MY LOCATION I am notified
+-> at the same time this is saved to a central archive
+-> can we do this in SMS? yes. subscription basis to nearby people.
+-> sharing without effort
+
+-> what will make your app different from Twitter is how it
+	1. collects similar reports
+	2. alerts people based on location
+
+-> possible summaries/clusters
+	1. by location
+	2. by damage level
+	3. geo-data
+
+DB: subscriber, cellphone number
+-> anything reported in my location reaches me!
+
+
+
+SMS:  Immediate
+WiFi: Save-and-send
+
+What are ordinary citizens reporting?
+	-> beyond the pictures of damage/ranking the level of damage
+	-> descriptions of what they think is needed?
+
+As a responder:
+	-> ano itsura ng lugar?
+	-> ano kailangan?
+	-> are roads passable?
+
+Report ako kay BRGY A
+	-> lahat ng kay A, narereceive ko.
+	-> like following on Twitter
+
+
+Types of User
+
+1. Responder na kulang ng information
+
+2. Non-evacuated resident na aware
+
+3. Resident/subscriber to the service 
